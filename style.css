@@ -49,3 +49,9 @@ header a:hover {
      color: white;
 }
 
+/* Estilos do elemento com active */
+header a.active {
+     background-color: #5BC241;
+     color: white;
+}
+
