@@ -18,6 +18,12 @@ header {
      padding: 38px 55px;
 }
 
+/* Estilos da imagem */
+
+header img {
+     float: left;
+}
+
 /* Estilos dos links */
 header a {
      float: left;
