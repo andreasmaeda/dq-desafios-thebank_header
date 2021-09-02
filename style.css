@@ -59,3 +59,17 @@ header a.active {
 .header-right {
      float: right;
 }
+
+/* Estilos do botão */
+.btn {
+     background-color: #5BC241;
+     border: none;
+     color: white;
+     padding:  12px;
+     text-align: center;
+     text-decoration: none;
+     /* display: inline-block; */
+     font-size: 15px;
+     border-radius: 10px;
+}
+
