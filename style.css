@@ -55,3 +55,7 @@ header a.active {
      color: white;
 }
 
+/* Float da seção de links para direita */
+.header-right {
+     float: right;
+}
