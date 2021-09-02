@@ -42,3 +42,10 @@ header .logo-text {
      font-size: 20px;
      font-weight: 800;
 }
+
+/* Estilos do hover */
+header a:hover {
+     background-color: #5BC241;
+     color: white;
+}
+
