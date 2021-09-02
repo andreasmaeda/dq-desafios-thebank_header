@@ -73,3 +73,16 @@ header a.active {
      border-radius: 10px;
 }
 
+/* Responsividade */
+
+@media screen and (max-width: 375px) {
+     header a {
+          float: none;
+          display: block;
+          text-align: center;
+     }
+
+     .header-right {
+          float: none;
+     }
+}
