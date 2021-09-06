@@ -1,4 +1,3 @@
-/* Definições iniciais do projeto */
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
 
 * {
@@ -11,78 +10,137 @@ body {
      font-family: 'Public Sans', sans-serif;
 }
 
-/* Estilos do header */
 header {
      overflow: hidden;
      background-color: white;
      padding: 38px 55px;
 }
 
-/* Estilos da imagem */
-
-header img {
+.logo {
      float: left;
 }
 
-/* Estilos dos links */
-header a {
+.logo a, .logo img, .logo h1 {
      float: left;
+}
+
+.logo h1 {
+     padding: 0;
+     margin: 0;
+     line-height: 40px;
+     font-size: 20px;
+     color: black;
+}
+
+.menu {
+     float: left;
+}
+
+.menu a {
      color: black;
      text-align: left;
-     padding: 12px;
      text-decoration: none;
      font-size: 15px;
      line-height: 18px;
      border-radius: 0px;
 }
 
-/* Estilos do logo-texto */
-
-header .logo-text {
-     font-size: 20px;
-     font-weight: 800;
-}
-
-/* Estilos do hover */
-header a:hover {
-     background-color: #5BC241;
-     color: white;
-}
-
-/* Estilos do elemento com active */
-header a.active {
-     background-color: #5BC241;
-     color: white;
-}
-
-/* Float da seção de links para direita */
-.header-right {
+.right-content {
      float: right;
 }
 
-/* Estilos do botão */
-.btn {
+ul {
+     float: left;
+     padding: 0;
+     margin: 0;
+}
+
+.menu ul li {
+     list-style: none;
+     display: inline-block;
+}
+
+.menu ul li a {
+     display: block;
+     width: 100%;
+     text-align: center;
+     padding: 10px;
+}
+
+.menu ul a:hover {
+     background-color: #5BC241;
+     color: white;
+}
+
+header .btn {
      background-color: #5BC241;
      border: none;
      color: white;
-     padding:  12px;
+     padding: 12px;
      text-align: center;
      text-decoration: none;
-     /* display: inline-block; */
      font-size: 15px;
      border-radius: 10px;
+     float: left;
+     margin-left: 20px;
 }
 
 /* Responsividade */
 
-@media screen and (max-width: 375px) {
-     header a {
-          float: none;
+@media screen and (max-width: 810px) {
+     .logo {
+          float: left;
           display: block;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 100px;
+     }
+
+     .logo a {
+          margin: 0 auto;
+          display: block;
+     }
+
+     .logo h1 {
+          float: right;
+          font-size: 40px;
+     }
+
+     .logo a, .logo img {
+          float: none;
+          display: inline-block;
+     }
+
+     nav {
+          margin-bottom: 20px;
+     }
+
+     .menu, ul {
+          float: none;
+     }
+
+     .right-content {
+          float: none;
           text-align: center;
      }
 
-     .header-right {
+     header .btn {
           float: none;
+          margin-left: 0;
+          display: inline-block;
+     }
+
+     .menu ul {
+          margin-top: 20px;
+     }
+
+     .menu ul li {
+          width: 100%;
+          margin-bottom: 20px;
+     }
+
+     .menu ul li a {
+          font-size: 40px;
+          padding: 20px;
      }
 }
